@@ -23,7 +23,7 @@ for survey_data in surveys:
 
 customer_surveys = get_all_customer_surveys('cust001')
 for survey in customer_surveys:
-    survey_id = customer_surveys['sk'].split('#')[1]
+    survey_id = survey['sk'].split('#')[1]
     if survey['survey_data']['title'] == "Product Feedback":
         response_data_one = [
             'I thought it was okay.',
