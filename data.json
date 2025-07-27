@@ -1,0 +1,98 @@
+{
+  "customers": [
+    {
+      "customer_id": "cust001",
+      "profile_data": {
+        "name": "Alice Johnson",
+        "email": "alice@example.com"
+      }
+    },
+    {
+      "customer_id": "cust002",
+      "profile_data": {
+        "name": "Bob Smith",
+        "email": "bob@example.com"
+      }
+    },
+    {
+      "customer_id": "cust003",
+      "profile_data": {
+        "name": "Carol Lee",
+        "email": "carol@example.com"
+      }
+    }
+  ],
+  "surveys": [
+    {
+      "customer_id": "cust001",
+      "survey_data": {
+        "title": "Product Feedback",
+        "questions": ["How do you rate our product?", "Any suggestions?"]
+      }
+    },
+    {
+      "customer_id": "cust001",
+      "survey_data": {
+        "title": "Website Experience",
+        "questions": ["Did you find what you needed?", "Rate the UI."]
+      }
+    },
+    {
+      "customer_id": "cust001",
+      "survey_data": {
+        "title": "Support Review",
+        "questions": ["Was support helpful?", "How quickly did we respond?"]
+      }
+    },
+    {
+      "customer_id": "cust002",
+      "survey_data": {
+        "title": "Checkout Flow",
+        "questions": ["Was checkout smooth?", "Any payment issues?"]
+      }
+    },
+    {
+      "customer_id": "cust002",
+      "survey_data": {
+        "title": "Account Setup",
+        "questions": ["Was setup intuitive?", "Any blockers?"]
+      }
+    },
+    {
+      "customer_id": "cust002",
+      "survey_data": {
+        "title": "Feature Requests",
+        "questions": ["What features would you like?"]
+      }
+    },
+    {
+      "customer_id": "cust003",
+      "survey_data": {
+        "title": "Mobile App",
+        "questions": ["Did you try the app?", "Rate the experience."]
+      }
+    },
+    {
+      "customer_id": "cust003",
+      "survey_data": {
+        "title": "Pricing Feedback",
+        "questions": ["Is the pricing fair?", "Would you pay more/less?"]
+      }
+    },
+    {
+      "customer_id": "cust003",
+      "survey_data": {
+        "title": "Email Communication",
+        "questions": ["Too many emails?", "Are they useful?"]
+      }
+    },
+    {
+      "customer_id": "cust003",
+      "survey_data": {
+        "title": "Delivery Time",
+        "questions": ["Fast enough?", "Any delays?"]
+      }
+    }
+  ],
+  "responses": []
+}
