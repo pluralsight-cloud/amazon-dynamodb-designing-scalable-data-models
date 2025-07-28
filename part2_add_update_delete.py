@@ -38,3 +38,35 @@ def create_survey_response(survey_id, response_data):
             'response_data': response_data,
         }
     )
+
+
+def update_customer(customer_id, customer_data):
+    table.update_item(
+        Key={
+            'pk': 'CUSTOMER#' + customer_id,
+            'sk': 'PROFILE#' + customer_id,
+        },
+        UpdateExpression="SET profile_data = :val1",
+        ExpressionAttributeValues={':val1': customer_data}
+    )
+
+
+def delete_customer(customer_id):
+    table.delete_item(
+        Key={
+            'pk': 'CUSTOMER#' + customer_id,
+            'sk': 'PROFILE#' + customer_id
+        }
+    )
+
+
+# profile_data = {"name": "Bob Smith", "email": "bob@example.com"}
+# updated_profile_data = {"name": "Cat Jones", "email": "cat@example.com"}
+# customer_id = "cust123456"
+# customer_data = {
+#     "customer_id": customer_id,
+#     "profile_data": profile_data
+# }
+# create_customer(customer_data)
+# update_customer(customer_id, updated_profile_data)
+# delete_customer(customer_id)
