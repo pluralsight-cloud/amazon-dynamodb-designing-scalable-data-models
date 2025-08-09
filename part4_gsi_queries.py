@@ -8,9 +8,10 @@ table = dynamodb.Table(TABLE_NAME)
 
 def get_survey(survey_id):
     index_pk = Key('sk').eq('SURVEY#' + survey_id)
+    index_sk = Key('pk').begins_with('CUSTOMER#')
     result = table.query(
         IndexName='sk-pk-index',
-        KeyConditionExpression=index_pk
+        KeyConditionExpression=index_pk & index_sk
     )['Items']
     return result
 
